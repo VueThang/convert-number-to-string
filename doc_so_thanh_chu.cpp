@@ -78,13 +78,10 @@ void DocSoCo3ChuSo(int x)
 
 void DocPhuAm(int SoDauPhay)
 {
-	//if(SoDauPhay == 1 || SoDauPhay == 4 || SoDauPhay == 7 || SoDauPhay == 10 || SoDauPhay == 13)
 	if(SoDauPhay % 3 == 1)
 		wcout << L"nghìn ";
-	//else if(SoDauPhay == 2 || SoDauPhay == 5 || SoDauPhay == 8 || SoDauPhay == 11 || SoDauPhay == 14)
 	else if(SoDauPhay % 3 == 2)
 		wcout << L"triệu ";
-	//else if(SoDauPhay == 3 || SoDauPhay == 6 || SoDauPhay == 9 || SoDauPhay == 12 || SoDauPhay == 15)
 	else if(SoDauPhay % 3 == 0 && SoDauPhay != 0)
 		wcout << L"tỷ ";
 }
